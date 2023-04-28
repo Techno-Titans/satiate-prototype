@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* set the width to 100% */
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    right: 0%;
+    align-items: right;
+}
+
+.sidebar-button {
+    width: 24px;
+}
+
+.rightside-button {
+    height: 20px;
+    left: 0;
+}
+
+.header-logo {
+    width: 36px;
+}
