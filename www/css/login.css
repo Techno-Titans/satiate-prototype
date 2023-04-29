@@ -7,6 +7,10 @@
   ); 
 }
 
+body {
+  text-transform: uppercase;
+}
+
 .app {
   background: url(../img/logo.png) no-repeat center top; 
   position: absolute; 
