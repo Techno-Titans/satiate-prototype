@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Rubik+Mono+One&family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/general.css">
-        <title>SATIATE</title>
-    </head>
-    <body>
-        
-        <div class="app">
-            <h1 class="title">Satiate</h1>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Rubik+Mono+One&family=Sofia+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <title>SATIATE</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="title">Satiate</h1>
+    </div>
+    <div class="login-form">
+        <div class="login-row">
+            <label for="username">Username:</label>
+            <input type="username" id="username" class="login-input" name="username" required />
         </div>
-        <div class="login-form">
-            <div class="login-row">
-                <label for="username">Username:</label>
-                <input type="username" id="username" class="login-input" name="username" required>
-            </div>
-            <div class="login-row">
-                <label for="password">Password:</label>
-                <input type="password" id="password" class="login-input" name="password" required>
-            </div>
-            <div>
-                <button class="submit">Login</button>
-            </div>
+        <div class="login-row">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="login-input" name="password" required />
         </div>
-        <script src="js/login.js"></script>
-    </body>
+        <div class = "button-class">
+            <button class="button">
+                <span class="button-content">Login </span>
+            </button>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
 </html>
