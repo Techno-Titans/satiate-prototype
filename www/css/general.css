@@ -1,8 +1,8 @@
 body {
   -webkit-touch-callout: none;
   -webkit-text-size-adjust: none;
-  background-image: linear-gradient(105deg, #7785ff 0%, #ffffff 69%);
-  font-family: "Sofia Sans", sans-serif;
+  background-color: #e4e4e4;
+  background-image: radial-gradient(circle, #ffffff 0%, #7785ff 100%);
   font-size: 12px;
   height: 100vh;
   margin: 0px;
