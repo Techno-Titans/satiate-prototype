@@ -1,12 +1,13 @@
 let app = document.querySelector('.app');
-let loginForm = document.querySelector('.login-form');
+let loginForm = document.querySelector('.card');
 
 app.addEventListener("animationend", function() {
   loginForm.classList.toggle('is-done');
 });
 
-let submitButton = document.querySelector('.button');
+let submitButton = document.querySelector('.btn');
 
-submitButton.addEventListener('click', function() {
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault();
   window.location.href = 'home.html';
-})
+});
