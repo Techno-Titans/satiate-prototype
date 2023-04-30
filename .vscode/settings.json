@@ -1,3 +1,4 @@
 {
-  "livePreview.defaultPreviewPath": "/www/index.html"
+  "livePreview.defaultPreviewPath": "/www/index.html",
+  "editor.guides.bracketPairs": true
 }
