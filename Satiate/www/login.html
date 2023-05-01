@@ -25,10 +25,11 @@
         </div>
         <div class="form">
             <form>
-                <input type="text" placeholder="Login" required>
-                <input type="password" placeholder="Password" required>
+                <input type="text" id="username" placeholder="Login" required>
+                <input type="password" id="userpass" placeholder="Password" required>
                 <input type="submit" class="sign-in" value="Sign In">
             </form>
+            <p id="incorrect-text">Username/Password is Incorrect!</p>
         </div>
         <div class="loader">
             <div class="box1"></div>
@@ -37,6 +38,7 @@
         </div>
     </div>
     <script src="js/login.js"></script>
+    <script src="js/authenticate.js"></script>
 </body>
 
 </html>
