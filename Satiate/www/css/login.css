@@ -160,8 +160,8 @@ input[type="password"] {
     width: 112px;
     height: 112px;
     position: absolute;
-    top: 50%; 
-    left: 50%; 
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
 }
@@ -397,5 +397,29 @@ input[type="password"] {
         height: 48px;
         margin-top: 64px;
         margin-left: 0px;
+    }
+}
+
+#incorrect-text {
+    position: absolute;
+    opacity: 0;
+    justify-content: center;
+    color: red;
+    font-size: 16px;
+    font-family: "Aileron Regular", sans-serif;
+    transition: font-size 0.4s;
+}
+
+#incorrect-text.active {
+    animation: scale 0.4s forwards;
+}
+
+@keyframes scale {
+    from {
+        font-size: 16px;
+    }
+
+    to {
+        font-size: 1.08em;
     }
 }
