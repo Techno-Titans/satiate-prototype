@@ -1,0 +1,141 @@
+body {
+    background-color: #7785FF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.box {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 95%;
+    opacity: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* updated */
+    align-items: center;
+    justify-content: center;
+}
+
+.box.fade-in {
+    opacity: 0;
+    animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.opener {
+    position: absolute;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.opener.move-up {
+    animation: move-up 1s ease-in-out forwards;
+}
+
+@keyframes move-up {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.logo-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+
+}
+
+#logo-white {
+    width: 30%;
+    max-width: 430px;
+}
+
+.satiate-text {
+    margin-top: 0;
+    text-align: center;
+}
+
+.satiate {
+    font-size: 24pt;
+    font-family: 'Aileron Thin', sans-serif;
+    font-weight: 800;
+    color: #1f2ab4;
+    line-height: 0;
+}
+
+.form {
+    position: relative;
+    max-width: 300px;
+    margin-right: 5%;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.form.appear {
+    opacity: 0;
+    animation: appear 1s ease-in-out forwards;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    letter-spacing: 0.5px;
+    font-family: "Aileron Thin", sans-serif;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.sign-in {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #7785FF;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.sign-in:hover {
+    background-color: #7785FF;
+    box-shadow: 0 0 20px #6fc5ff50;
+}
+
+.sign-in:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+}
