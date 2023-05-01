@@ -15,6 +15,12 @@ logoScreen.addEventListener('animationend', () => {
     loginForm.classList.add('appear');
 })
 
-buttonClass.addEventListener('click', function(event) {
+let loadingBox = document.querySelector('.loader') as HTMLDivElement;
+
+loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
-})
+    loginForm.classList.add('fade-out');
+    setTimeout(() => {
+        loadingBox.classList.add('appear');
+    }, 1000);
+});
