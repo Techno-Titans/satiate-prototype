@@ -1,0 +1,87 @@
+.selection-panel {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    row-gap: 20px;
+    height: 100vh;
+    width: 100%;
+    margin-top: 100px;
+}
+
+@media (min-width: 540px) {
+    .selection-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1080px) {
+    .selection-panel {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+p {
+    font-size: 11pt;
+    font-family: 'Aileron Thin', sans-serif;
+}
+
+.box {
+    background-image: url('../img/splash.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    height: 360px;
+    margin-left: 3px;
+    border-radius: 12px;
+    border: 1px solid rgb(167, 167, 167);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Apply a drop shadow to the box */
+}
+
+.box-text {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    height: 32px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.box-caption {
+    width: 100%;
+    height: 64px;
+}
+
+.box-image {
+    height: 60%;
+    overflow: hidden;
+}
+
+#placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#title {
+    font-size: 14pt;
+    font-family: 'Aileron Regular', sans-serif;
+    line-height: 0;
+}
+
+#caption {
+    line-height: 1;
+}
+
+.box-rating {
+    align-self: flex-end;
+}
