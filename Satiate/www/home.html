@@ -110,8 +110,62 @@
     </div>
 
     <div class="post-screen">
+        <div class="post-close-button">
+            <svg id="close-button" width="800px" height="800px" viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000"
+                    d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z" />
+            </svg>
+        </div>
+        <div class="post-profile-and-type">
+            <div class="post-profile-picture">
+                <img src="img/profile.svg" id="profile-pic">
+            </div>
+            <div class="post-name-type">
+                <div class="post-profile-name">
+                    <p id="poster-name">Techno Titans</p>
+                </div>
+                <div class="post-type">
+                    <div class="dropdown">
+                        <button class="dropbtn">Type</button>
+                        <div class="dropdown-content">
+                            <a id="donation" href="#">Donation</a>
+                            <a id="pickup" href="#">Pickup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-images-head">
+            <div class="post-images-text">
+                <p>Images</p>
+            </div>
+            <div class="post-images">
+                <div class="post-pictures">
+    
+                </div>
+                <div class="post-pictures">
+    
+                </div>
+                <div class="post-pictures">
+    
+                </div>
+                <div class="post-pictures">
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="post-info">
+            <input type="text" id="title-input" placeholder="Title" name="title" required>
+            <textarea placeholder="Enter your message" id="caption-input" style="resize: none;"></textarea>
+            <input type="submit" id="submit-button" value="Submit">
+        </div>
         
     </div>
     <script src="js/home.js"></script>
+    <script src="js/post.js"></script>
 </body>
+
 </html>
