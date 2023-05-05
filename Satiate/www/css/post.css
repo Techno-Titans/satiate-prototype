@@ -1,0 +1,340 @@
+.post {
+    margin-right: 15px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 92px;
+    height: 36px;
+    bottom: 5%;
+    left: 80%;
+    transform: translateX(-40%);
+    background-color: #1fb4a1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.post-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#post {
+    width: 24px;
+    height: 24px;
+}
+
+.post-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.pixel-borders.post {
+    position: fixed;
+    width: 92px;
+    height: 36px;
+    bottom: 5%;
+    left: 80%;
+}
+
+.post-text {
+    padding-top: 7px;
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 12pt;
+    color: white;
+}
+
+.post.clicked {
+    background-color: rgb(194, 194, 194);
+    width: 88px;
+    height: 32px;
+}
+
+.post-screen {
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 12px;
+    opacity: 0;
+    width: 300px;
+    height: 380px;
+    padding: 10px;
+    background-color: #1fb4a1;
+    border: 1px solid gray;
+    border-radius: 15px;
+    z-index: 5;
+}
+
+@media (min-width: 540px) {
+    .post-screen {
+        width: 400px;
+        height: 480px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .post-screen {
+        width: 500px;
+        height: 580px;
+    }
+}
+
+
+.inToTheScreen {
+    animation: fly-in 1s forwards;
+    opacity: 0;
+    transform: translate(-50%, -130%);
+}
+
+.outOfTheScreen {
+    animation: fly-out 1s forwards;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+}
+
+@keyframes fly-in {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -130%);
+    }
+}
+
+@keyframes fly-out {
+    to {
+        opacity: 0;
+        transform: translate(-50%, 80%);
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    animation: appear 1s ease-in-out forwards;
+}
+
+.fade-out {
+    opacity: 0;
+    animation: disappear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.post-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2%;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+#close-button {
+    width: 20px;
+}
+
+.post-profile-and-type {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    height: 15%;
+}
+
+.post-profile-picture {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.post-pic-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#profile-pic {
+    width: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropbtn {
+    background-color: #1fb4a1;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    font-family: 'Minecraftia', sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: none;
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content p:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    padding-bottom: 10px;
+}
+
+.donation {
+    margin-bottom: 15px;
+    font-family: "Minecraftia", sans-serif;
+}
+
+.pickup {
+    padding-bottom: 10px;
+    font-family: "Minecraftia", sans-serif;
+}
+
+.post-name-type {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 8px;
+    line-height: 0;
+    font-size: 12px;
+    font-family: "Minecraftia", sans-serif;
+    color: whitesmoke;
+}
+
+.post-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    height: 50%;
+    border: 1px solid gray;
+    border-radius: 12px;
+
+}
+
+
+#title-input,
+#caption-input {
+    border: none;
+
+    width: 100%;
+    font-family: "Minecraftia", sans-serif;
+}
+
+#caption-input {
+    height: 80%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#title-input {
+    height: 20%;
+    border-bottom: 4px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#submit-button {
+    position: absolute;
+    z-index: 6;
+    align-self: flex-end;
+    bottom: 5%;
+    right: 3%;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    border-radius: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: "Minecraftia", sans-serif;
+    font-size: 16px;
+    background-color: #1fb4a1;
+}
+
+
+.post-images-head {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+.post-images-text {
+    padding-top: 5px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-family: "Minecraftia", sans-serif;
+}
+
+.post-images {
+    border-radius: 12px;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.post-images:hover {
+    cursor: pointer;
+}
+
+.post-pictures {
+    margin: 5px;
+    border-radius: 12px;
+}

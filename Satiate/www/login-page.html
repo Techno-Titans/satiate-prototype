@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/login-page.css">
+    <link rel="stylesheet" href="css/pixel-borders.css">
+    <link rel="stylesheet" href="css/general.css">
+
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="div-border pixel-borders login-box-bg pixel-borders--2">
+            <div class="login-logo">
+                <div class="logo-image">
+                    <img src="img/logo.png" class="logo-image-src">
+                </div>
+                <div class="logo-text">
+                    Satiate
+                </div>
+            </div>
+            <div class="login-form">
+                <form class="form">
+                    <input class='pixel-borders pixel-borders--2' type="text" id="username" placeholder="Username"
+                        required>
+                    <input class='pixel-borders pixel-borders--2' type="password" id="userpass" placeholder="Password"
+                        required>
+                    <br>
+                    <input class='pixel-borders pixel-borders--1-inset sign-in' type="submit" value="Sign In">
+                    <p id="incorrect-text">Username/Password is Incorrect!</p>
+                </form>
+            </div>
+        </div>
+        <div class="loader">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <script src="script/login.js"></script>
+</body>
+</html>

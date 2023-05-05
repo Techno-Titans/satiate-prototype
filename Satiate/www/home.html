@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/pixel-borders.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/selection-pane.css">
+</head>
+
+<body>
+    <div class="top-bar-position">
+        <div class="top-bar pixel-borders pixel-borders--2">
+            <div class="header">
+                <div class="logo">
+                    <div>
+                        <img id="logo" src="img/logo.png">
+                    </div>
+                    <div>
+                        <p class="title-logo">Satiate</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <svg id="search" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z"
+                                fill="#000000" />
+                        </svg>
+                    </div>
+                    <div class="map">
+                        <svg id="map" width="800px" height="800px" viewBox="-3 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-183.000000, -5439.000000)"
+                                    fill="#000000">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M134,5287.635 C133.449,5287.635 133,5287.186 133,5286.635 C133,5286.084 133.449,5285.635 134,5285.635 C134.551,5285.635 135,5286.084 135,5286.635 C135,5287.186 134.551,5287.635 134,5287.635 M134,5283.635 C132.343,5283.635 131,5284.978 131,5286.635 C131,5288.292 132.343,5289.635 134,5289.635 C135.657,5289.635 137,5288.292 137,5286.635 C137,5284.978 135.657,5283.635 134,5283.635 M134,5296 C134,5296 129,5289 129,5286 C129,5283.243 131.243,5281 134,5281 C136.757,5281 139,5283.243 139,5286 C139,5289 134,5296 134,5296 M134,5279 C130.134,5279 127,5282.134 127,5286 C127,5289.866 134,5299 134,5299 C134,5299 141,5289.866 141,5286 C141,5282.134 137.866,5279 134,5279"
+                                            id="pin_sharp_circle-[#625]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="profile">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z"
+                                fill="#000000" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="types">
+                <div class="donation-bar">
+                    <p class="type-text" id="donation">Donation</p>
+                </div>
+                <div class="pickup-bar">
+                    <p class="type-text" id="pickup">Pickup</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post pixel-borders pixel-borders--2">
+        <div class="post-button">
+            <div class="post-image">
+                <svg id="post" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+
+                    <g fill="none" fill-rule="evenodd">
+                        <path
+                            d="m16.3898122 5c.5522847 0 1 .44771525 1 1 0 .51283584-.3860402.93550716-.8833789.99327227l-.1166211.00672773h-9.85135066c-1.34587545 0-2.44711619 1.04740572-2.53306205 2.37155699l-.00539949.16690455v15.92307696c0 1.3458754 1.04740572 2.4471162 2.37155699 2.533062l.16690455.0053995h15.92307696c1.3458754 0 2.4471162-1.0474057 2.533062-2.371557l.0053995-.1669045v-9.8428603c0-.5522848.4477153-1 1-1 .5128358 0 .9355072.3860402.9932723.8833788l.0067277.1166212v9.8428603c0 2.4349081-1.9174864 4.4219633-4.3248153 4.5335216l-.2136462.0049399h-15.92307696c-2.43490815 0-4.42196336-1.9174864-4.53352169-4.3248153l-.00493985-.2136462v-15.92307696c0-2.43490815 1.9174864-4.42196336 4.32481527-4.53352169l.21364627-.00493985zm9.6101878-4c.5522847 0 1 .44771525 1 1v3h3c.5522847 0 1 .44771525 1 1s-.4477153 1-1 1h-3v3c0 .5522847-.4477153 1-1 1s-1-.4477153-1-1v-3h-3c-.5522847 0-1-.44771525-1-1s.4477153-1 1-1h3v-3c0-.55228475.4477153-1 1-1z"
+                            fill="#2e2e2e" fill-rule="nonzero" />
+                    </g>
+                </svg>
+            </div>
+            <div class="post-text">
+                Post
+            </div>
+        </div>
+    </div>
+
+    <div class="selection-panel">
+        <div class="box pixel-borders--2">
+            <div class="box-image">
+                <img class="placeholder" src="img/1.png">
+            </div>
+            <div class="box-text">
+                <div class="box-title">
+                    <p class="title">Lorem Ipsum</p>
+                </div>
+                <div class="box-caption">
+                    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. llis nulla vitae urna
+                        mattis posuere.</p>
+                </div>
+                <div class="box-rating">
+                    <p class="rating">5.0 stars</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-screen pixel-borders pixel-borders--2">
+        <div class="post-close-button">
+            <svg id="close-button" width="800px" height="800px" viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000"
+                    d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z" />
+            </svg>
+        </div>
+        <div class="post-profile-and-type">
+            <div class="post-profile-picture">
+                <img src="img/profile.svg" id="profile-pic">
+            </div>
+            <div class="post-name-type">
+                <div class="post-profile-name">
+                    <p id="poster-name">Techno Titans</p>
+                </div>
+                <div class="post-type">
+                    <div class="dropdown">
+                        <button class="dropbtn">Type</button>
+                        <div class="dropdown-content">
+                            <p class="donation">Donation</p>
+                            <p class="pickup">Pickup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-images-head pixel-borders--2">
+            <div class="post-images-text">
+                <p>Images</p>
+            </div>
+            <div class="post-images">
+                <div class="post-pictures pixel-borders--2">
+                    <img id="image1" class="post-pic-img" src="img/1.png"/>
+                </div>
+                <div class="post-pictures pixel-borders--2">
+                    <img id="image2"class="post-pic-img" src="img/2.png"/>
+                </div>
+                <div class="post-pictures pixel-borders--2">
+                    <img id="image3"class="post-pic-img" src="img/3.png"/>
+                </div>
+                <div class="post-pictures pixel-borders--2">
+                    <img id="image4"class="post-pic-img" src="img/4.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-info pixels-border pixel-borders--2">
+            <input type="text" id="title-input" placeholder="Title" name="title" required>
+            <textarea placeholder="Enter your message" id="caption-input" style="resize: none;"></textarea>
+            <input type="submit" id="submit-button" class="pixel-borders pixel-borders--2" value="Submit">
+        </div>
+
+
+
+        <script src="script/home.js"></script>
+        <script src="script/post.js"></script>
+</body>
+
+</html>
