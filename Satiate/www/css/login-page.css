@@ -4,7 +4,7 @@ body {
 }
 
 .pixel-borders.login-box-bg {
-    background-color: whitesmoke;
+    background: radial-gradient(#ffffff 0%, #1fb4a1 100%);
 }
 
 .login-box {
